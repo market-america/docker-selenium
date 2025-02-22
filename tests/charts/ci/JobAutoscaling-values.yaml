@@ -30,6 +30,8 @@ chromeNode:
     enabled: &readinessProbe false
   livenessProbe:
     enabled: &livenessProbe true
+  hpa:
+    capabilities: "{\"se:downloadsEnabled\": ${SELENIUM_ENABLE_MANAGED_DOWNLOADS}}"
 # Configuration for edge nodes
 edgeNode:
   extraEnvironmentVariables: *extraEnvironmentVariables
@@ -37,6 +39,8 @@ edgeNode:
     enabled: *readinessProbe
   livenessProbe:
     enabled: *livenessProbe
+  hpa:
+    capabilities: "{\"se:downloadsEnabled\": ${SELENIUM_ENABLE_MANAGED_DOWNLOADS}}"
 # Configuration for firefox nodes
 firefoxNode:
   extraEnvironmentVariables: *extraEnvironmentVariables
@@ -44,3 +48,5 @@ firefoxNode:
     enabled: *readinessProbe
   livenessProbe:
     enabled: *livenessProbe
+  hpa:
+    capabilities: "{\"se:downloadsEnabled\": ${SELENIUM_ENABLE_MANAGED_DOWNLOADS}}"
