@@ -1,3 +1,28 @@
+## :heavy_check_mark: selenium-grid-0.40.0
+
+- Chart is using image tag 4.29.0-20250222
+- Chart is tested on Kubernetes versions: v1.26.15,v1.27.16,v1.28.15,v1.29.13,v1.30.9,v1.31.5,v1.32.1
+- Chart is tested on container runtime Docker versions: 26.1.4,27.4.1
+- Chart is tested on Helm versions: v3.11.3,v3.12.3,v3.13.3,v3.14.3,v3.15.4,v3.16.4,v3.17.0
+- Chart is tested autoscaling capabilities with KEDA image tag: 2.16.1-selenium-grid-20250222
+- Selenium Grid Scaler implementation preview. [README](https://github.com/seleniumhq/docker-selenium/tree/trunk/.keda/README.md)
+
+### Fixed
+- [`5648285b`](http://github.com/seleniumhq/docker-selenium/commit/5648285bda6d88a74c32dcc8865572a2cb79023e) - Fix add-cert-helper.sh only adding a single certificate in Chrome (#2660) :: Peter Upfold
+
+### Changed
+- [`dc3f59d5`](http://github.com/seleniumhq/docker-selenium/commit/dc3f59d5bae6e2bd1a022c7897dd379a2ceebc06) - [ci] Update tag 4.29.0-20250222 in docs and files :: Selenium CI Bot
+- [`6f41a42b`](http://github.com/seleniumhq/docker-selenium/commit/6f41a42b9429cc8953371f98cea093e31fadcd25) - [ci] Update browser versions matrix :: Viet Nguyen Duc
+- [`ccbcbd8f`](http://github.com/seleniumhq/docker-selenium/commit/ccbcbd8f57ad3bc53d472dc335c0bfe7634f94ba) - Update Helm release kube-prometheus-stack to v69.4.1 (#2670) :: renovate[bot]
+- [`031fb6c2`](http://github.com/seleniumhq/docker-selenium/commit/031fb6c24bc341135e3bcd9dd381b4f0ebbd4cdc) - Update Helm release kube-prometheus-stack to v69.4.0 (#2669) :: renovate[bot]
+- [`83f6c087`](http://github.com/seleniumhq/docker-selenium/commit/83f6c087341cb65ddf6136ab1b982f366013fc9c) - K8s: Set K8s node IP to all components via env var KUBERNETES_NODE_HOST_IP (#2668) :: Viet Nguyen Duc
+- [`be6f2613`](http://github.com/seleniumhq/docker-selenium/commit/be6f2613d45a7470cd7e31dd46d5bfc987be1283) - Update Helm release kube-prometheus-stack to v69 (#2646) :: renovate[bot]
+- [`111ba26a`](http://github.com/seleniumhq/docker-selenium/commit/111ba26a70018ed452b92c615cbd7ae5c8195dfc) - K8s: Default Node register period is longer with a short cycle (#2662) :: Viet Nguyen Duc
+- [`0a5b6ece`](http://github.com/seleniumhq/docker-selenium/commit/0a5b6ece0fda42a25fac67c7da07ac4aad1b13db) - K8s: Improve Node checks for liveness probe and preStop hook (#2661) :: Viet Nguyen Duc
+- [`9fa52f19`](http://github.com/seleniumhq/docker-selenium/commit/9fa52f19f990de1aab69860748b9f23b2c29355d) - chore(deps): update helm release kube-prometheus-stack to v68.5.0 (#2645) :: renovate[bot]
+- [`68cafe0f`](http://github.com/seleniumhq/docker-selenium/commit/68cafe0f67fc14018c6e23d82241569ca9506893) - chore(deps): update helm release kube-prometheus-stack to v68.4.5 (#2641) :: renovate[bot]
+- [`3f544507`](http://github.com/seleniumhq/docker-selenium/commit/3f544507ab3c35b314474fce57d6a8d863c852d0) - [ci] Update chart 0.39.2 changelog :: Selenium CI Bot
+
 ## :heavy_check_mark: selenium-grid-0.39.2
 
 - Chart is using image tag 4.28.1-20250202
