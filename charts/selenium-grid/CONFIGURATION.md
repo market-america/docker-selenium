@@ -1,6 +1,6 @@
 # selenium-grid
 
-![Version: 0.39.2](https://img.shields.io/badge/Version-0.39.2-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 4.28.1-20250202](https://img.shields.io/badge/AppVersion-4.28.1--20250202-informational?style=flat-square)
+![Version: 0.40.0](https://img.shields.io/badge/Version-0.40.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 4.29.0-20250222](https://img.shields.io/badge/AppVersion-4.29.0--20250222-informational?style=flat-square)
 
 A Helm chart for creating a Selenium Grid Server in Kubernetes
 
@@ -31,9 +31,9 @@ A Helm chart for creating a Selenium Grid Server in Kubernetes
 |-----|------|---------|-------------|
 | global.K8S_PUBLIC_IP | string | `""` | Public IP of the host running Kubernetes cluster. This is used to access the Selenium Grid from outside the cluster when ingress is disabled or enabled without a hostname is set. This is part of constructing SE_NODE_GRID_URL and rewrite URL of `se:vnc`, `se:cdp` in the capabilities when `ingress.hostname` is unset |
 | global.seleniumGrid.imageRegistry | string | `"selenium"` | Image registry for all selenium components |
-| global.seleniumGrid.imageTag | string | `"4.28.1-20250202"` | Image tag for all selenium components |
-| global.seleniumGrid.nodesImageTag | string | `"4.28.1-20250202"` | Image tag for browser's nodes |
-| global.seleniumGrid.videoImageTag | string | `"ffmpeg-7.1-20250202"` | Image tag for browser's video recorder |
+| global.seleniumGrid.imageTag | string | `"4.29.0-20250222"` | Image tag for all selenium components |
+| global.seleniumGrid.nodesImageTag | string | `"4.29.0-20250222"` | Image tag for browser's nodes |
+| global.seleniumGrid.videoImageTag | string | `"ffmpeg-7.1-20250222"` | Image tag for browser's video recorder |
 | global.seleniumGrid.kubectlImage | string | `"bitnami/kubectl:latest"` | kubectl image is used to execute kubectl commands in utility jobs |
 | global.seleniumGrid.imagePullSecret | string | `""` | Pull secret for all components, can be overridden individually |
 | global.seleniumGrid.logLevel | string | `"INFO"` | Log level for all components. Possible values describe here: https://www.selenium.dev/documentation/grid/configuration/cli_options/#logging |
@@ -668,7 +668,7 @@ A Helm chart for creating a Selenium Grid Server in Kubernetes
 | videoRecorder.extraVolumes | list | `[]` | Extra volumes for video recorder pod |
 | videoRecorder.s3 | object | `{"args":[],"command":[],"extraEnvironmentVariables":[],"imageName":"aws-cli","imagePullPolicy":"IfNotPresent","imageRegistry":"bitnami","imageTag":"latest","securityContext":{"runAsUser":0}}` | Container spec for the uploader if above it is defined as "uploader.name: s3" |
 | customLabels | object | `{}` | Custom labels for k8s resources |
-| keda.image | object | `{"keda":{"registry":"selenium","repository":"keda","tag":"2.16.1-selenium-grid-20250202"},"metricsApiServer":{"registry":"selenium","repository":"keda-metrics-apiserver","tag":"2.16.1-selenium-grid-20250202"},"webhooks":{"registry":"selenium","repository":"keda-admission-webhooks","tag":"2.16.1-selenium-grid-20250202"}}` | Specify image for KEDA components |
+| keda.image | object | `{"keda":{"registry":"selenium","repository":"keda","tag":"2.16.1-selenium-grid-20250222"},"metricsApiServer":{"registry":"selenium","repository":"keda-metrics-apiserver","tag":"2.16.1-selenium-grid-20250222"},"webhooks":{"registry":"selenium","repository":"keda-admission-webhooks","tag":"2.16.1-selenium-grid-20250222"}}` | Specify image for KEDA components |
 | keda.additionalAnnotations | string | `nil` | Annotations for KEDA resources |
 | keda.http.timeout | int | `60000` |  |
 | keda.webhooks | object | `{"enabled":false}` | Enable KEDA admission webhooks component |
