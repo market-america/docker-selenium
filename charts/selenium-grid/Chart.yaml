@@ -32,7 +32,7 @@ dependencies:
   condition: redis.enabled
 maintainers:
   - name: SeleniumHQ
-    email: selenium-developers@googlegroups.com
+    email: docker-selenium@seleniumhq.org
     url: https://github.com/SeleniumHQ
 sources:
   - https://github.com/SeleniumHQ/docker-selenium

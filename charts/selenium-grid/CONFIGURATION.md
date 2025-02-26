@@ -8,7 +8,7 @@ A Helm chart for creating a Selenium Grid Server in Kubernetes
 
 | Name | Email | Url |
 | ---- | ------ | --- |
-| SeleniumHQ | <selenium-developers@googlegroups.com> | <https://github.com/SeleniumHQ> |
+| SeleniumHQ | <docker-selenium@seleniumhq.org> | <https://github.com/SeleniumHQ> |
 
 ## Source Code
 
