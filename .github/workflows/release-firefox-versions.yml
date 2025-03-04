@@ -60,7 +60,6 @@ jobs:
     runs-on: ubuntu-24.04
     permissions: write-all
     strategy:
-      max-parallel: 1
       fail-fast: false
       matrix:
         browser-version: ${{ fromJSON(github.event.inputs.browser-versions)}}
@@ -163,6 +162,10 @@ jobs:
           GRID_VERSION: ${{ needs.deploy.outputs.GRID_VERSION }}
       - name: Create CHANGELOG directory
         run: mkdir -p ./CHANGELOG/${{ env.GRID_VERSION }}
+      - name: Fetch latest version
+        run: |
+          python3 -m pip install -r tests/requirements.txt
+          python3 tests/build-backward-compatible/fetch_version.py
       - name: Download results
         uses: actions/download-artifact@v4
         with:
