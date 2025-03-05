@@ -1,3 +1,21 @@
+## :heavy_check_mark: selenium-grid-0.40.1
+
+- Chart is using image tag 4.29.0-20250303
+- Chart is tested on Kubernetes versions: v1.26.15,v1.27.16,v1.28.15,v1.29.14,v1.30.10,v1.31.6,v1.32.2
+- Chart is tested on container runtime Docker versions: 26.1.4,27.4.1,27.5.1
+- Chart is tested on Helm versions: v3.11.3,v3.12.3,v3.13.3,v3.14.3,v3.15.4,v3.16.4,v3.17.0
+- Chart is tested autoscaling capabilities with KEDA image tag: 2.16.1-selenium-grid-20250303
+- Selenium Grid Scaler implementation preview. [README](https://github.com/seleniumhq/docker-selenium/tree/trunk/.keda/README.md)
+
+### Changed
+- [`cbf87030`](http://github.com/seleniumhq/docker-selenium/commit/cbf8703009990f5757e7ebe65ae6bde2b2d55c59) - [ci] Update tag 4.29.0-20250303 in docs and files :: Selenium CI Bot
+- [`70ac588d`](http://github.com/seleniumhq/docker-selenium/commit/70ac588d567b253c93c91d990a5b197f5f8d146a) - Update Helm release kube-prometheus-stack to v69.7.2 (#2679) :: renovate[bot]
+- [`966a78a3`](http://github.com/seleniumhq/docker-selenium/commit/966a78a3b3a3c770bff5041ae25d5d5a79381141) - Docker: Resolve default component port via env var (#2689) :: Viet Nguyen Duc
+- [`7276e544`](http://github.com/seleniumhq/docker-selenium/commit/7276e544b0f4d5254ef728875a43586f8467d146) - K8s: Update Helm configs for setting Node custom capabilities (#2686) :: Viet Nguyen Duc
+- [`1b424655`](http://github.com/seleniumhq/docker-selenium/commit/1b424655a6c472de7b855d29c76256c2fd706f11) - K8s: Bump new KEDA image for feature preview (#2681) :: Viet Nguyen Duc
+- [`6f262a31`](http://github.com/seleniumhq/docker-selenium/commit/6f262a317e57ec48cf1348629249f3b9ca2c373a) - [docs] Update project contact email :: Viet Nguyen Duc
+- [`5bc5b205`](http://github.com/seleniumhq/docker-selenium/commit/5bc5b20585f2d35950f76ac8e6a7c21a279d66b2) - [ci] Update chart 0.40.0 changelog :: Selenium CI Bot
+
 ## :heavy_check_mark: selenium-grid-0.40.0
 
 - Chart is using image tag 4.29.0-20250222
