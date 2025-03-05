@@ -1,10 +1,19 @@
 matrix:
   browser:
+    '136':
+      EDGE_VERSION: null
+      CHROME_VERSION: null
+      FIREFOX_VERSION: 136.0
+      FIREFOX_PLATFORMS: linux/amd64,linux/arm64
     '135':
+      EDGE_VERSION: null
+      CHROME_VERSION: null
       FIREFOX_VERSION: 135.0.1
       FIREFOX_DOWNLOAD_URL: https://download-installer.cdn.mozilla.net/pub/firefox/nightly/2025/01/2025-01-06-09-47-46-mozilla-central/firefox-135.0a1.en-US.linux-aarch64.deb
       FIREFOX_PLATFORMS: linux/amd64,linux/arm64
     '134':
+      EDGE_VERSION: null
+      CHROME_VERSION: google-chrome-stable=134.0.6998.35-1
       FIREFOX_VERSION: 134.0.2
       FIREFOX_DOWNLOAD_URL: https://download-installer.cdn.mozilla.net/pub/firefox/nightly/2024/11/2024-11-25-09-40-45-mozilla-central/firefox-134.0a1.en-US.linux-aarch64.deb
       FIREFOX_PLATFORMS: linux/amd64,linux/arm64
@@ -157,3 +166,10 @@ matrix:
     '97':
       CHROME_VERSION: google-chrome-stable=97.0.4692.99-1
       FIREFOX_VERSION: 97.0.2
+    '96':
+      CHROME_VERSION: google-chrome-stable=96.0.4664.110-1
+      FIREFOX_VERSION: 96.0.3
+    '95':
+      CHROME_VERSION: google-chrome-stable=95.0.4638.69-1
+      EDGE_VERSION: microsoft-edge-stable=95.0.1020.40-1
+      FIREFOX_VERSION: 95.0.2
