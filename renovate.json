@@ -13,5 +13,5 @@
       "enabled": false
     }
   ],
-  "branchName": "{{packageName}}-update"
+  "branchName": "renovate/{{packageName}}-update"
 }
