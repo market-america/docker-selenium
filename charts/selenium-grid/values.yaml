@@ -1704,7 +1704,8 @@ edgeNode:
 relayNode:
   # -- Enable relay nodes
   enabled: false
-
+  # -- Specify another Grid, another network, or a cloud vendor that you wish to connect to (e.g. https://ondemand.us-west-1.saucelabs.com/wd/hub)
+  relayUrl: ""
   # -- NOTE: Only used when autoscaling.enabled is false
   # Enable creation of Deployment
   # true (default) - if you want long-living pods
@@ -1875,13 +1876,13 @@ relayNode:
   scaledObjectOptions:
   hpa:
     # -- browserName should match with Node stereotype and request capability is scaled by this scaler
-    browserName: "chrome"
+    browserName: ""
     # -- sessionBrowserName if the browserName is different from the sessionBrowserName
     sessionBrowserName: ""
     # -- browserVersion should match with Node stereotype and request capability is scaled by this scaler
     browserVersion: ""
     # -- platformName should match with Node stereotype and request capability is scaled by this scaler
-    platformName: "Android"
+    platformName: ""
     # -- Skip check SSL when connecting to the Graphql endpoint
     unsafeSsl: '{{ template "seleniumGrid.graphqlURL.unsafeSsl" . }}'  # Optional
 
