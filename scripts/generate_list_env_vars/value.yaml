@@ -61,7 +61,7 @@
 - name: SE_JAVA_OPTS
   default: ''
 - name: SE_JAVA_OPTS_DEFAULT
-  default: -XX:+HeapDumpOnOutOfMemoryError -XX:HeapDumpPath=/opt/selenium/logs
+  default: ''
 - name: SE_JAVA_SSL_TRUST_STORE
   default: /opt/selenium/secrets/server.jks
 - name: SE_JAVA_SSL_TRUST_STORE_PASSWORD
@@ -114,8 +114,12 @@
   default: 'true'
 - name: SE_NODE_RELAY_BROWSER_NAME
   default: ''
+- name: SE_NODE_RELAY_BROWSER_VERSION
+  default: ''
 - name: SE_NODE_RELAY_MAX_SESSIONS
   default: ''
+- name: SE_NODE_RELAY_ONLY
+  default: 'true'
 - name: SE_NODE_RELAY_PLATFORM_NAME
   default: ''
 - name: SE_NODE_RELAY_PLATFORM_VERSION
@@ -149,7 +153,7 @@
 - name: SE_OTEL_JVM_ARGS
   default: ''
 - name: SE_OTEL_SERVICE_NAME
-  default: selenium-router
+  default: selenium-event-bus
 - name: SE_OTEL_TRACES_EXPORTER
   default: otlp
 - name: SE_PRESET
