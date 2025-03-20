@@ -465,7 +465,9 @@ elif [ "${TEST_EXISTING_KEDA}" != "true" ]; then
     "
   else
     HELM_COMMAND_SET_IMAGES="${HELM_COMMAND_SET_IMAGES} \
-    --set keda.image=null \
+    --set keda.image.keda.registry=ghcr.io/kedacore --set keda.image.keda.repository=keda --set keda.image.keda.tag=null \
+    --set keda.image.metricsApiServer.registry=ghcr.io/kedacore --set keda.image.metricsApiServer.repository=keda-metrics-apiserver --set keda.image.metricsApiServer.tag=null \
+    --set keda.image.webhooks.registry=ghcr.io/kedacore --set keda.image.webhooks.repository=keda-admission-webhooks --set keda.image.webhooks.tag=null \
     "
   fi
 fi
