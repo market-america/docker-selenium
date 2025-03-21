@@ -1001,8 +1001,10 @@ ___
 
 ## Deploying to Kubernetes
 
-We offer a Helm chart to deploy these Docker images to Kubernetes.
-Read more details at the Helm [readme](./charts/selenium-grid/README.md).
+Get started to deploy Selenium Grid on Kubernetes, you can refer to YAML files in the [kubernetes](./kubernetes) directory.
+
+To simplify the deployment process, hide the complexity of Kubernetes objects, and provide a more straightforward way to deploy Selenium Grid on Kubernetes, we offer a Helm chart to deploy Selenium Grid to Kubernetes.
+Read more details at the Helm [chart README](./charts/selenium-grid/README.md) and [chart CONFIGURATION](./charts/selenium-grid/CONFIGURATION.md).
 
 ___
 
