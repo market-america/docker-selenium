@@ -27,7 +27,7 @@ services:
       - SE_EVENT_BUS_HOST=selenium-hub
 
   chrome_video:
-    image: selenium/video:ffmpeg-7.1.1-20250323
+    image: selenium/video:ffmpeg-7.1.1.1-20250323
     volumes:
       - /tmp/videos:/videos
     depends_on:
@@ -39,7 +39,7 @@ services:
       - SE_VIDEO_FILE_NAME=auto
 
   edge_video:
-    image: selenium/video:ffmpeg-7.1.1-20250323
+    image: selenium/video:ffmpeg-7.1.1.1-20250323
     volumes:
       - /tmp/videos:/videos
     depends_on:
@@ -51,7 +51,7 @@ services:
       - SE_VIDEO_FILE_NAME=auto
 
   firefox_video:
-    image: selenium/video:ffmpeg-7.1.1-20250323
+    image: selenium/video:ffmpeg-7.1.1.1-20250323
     volumes:
       - /tmp/videos:/videos
     depends_on:

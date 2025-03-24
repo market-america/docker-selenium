@@ -11,7 +11,7 @@ global:
     # -- Image tag for browser's nodes
     nodesImageTag: 4.30.0-20250323
     # -- Image tag for browser's video recorder
-    videoImageTag: ffmpeg-7.1.1-20250323
+    videoImageTag: ffmpeg-7.1.1.1-20250323
     # -- kubectl image is used to execute kubectl commands in utility jobs
     kubectlImage: bitnami/kubectl:latest
     # -- Pull secret for all components, can be overridden individually

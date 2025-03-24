@@ -46,7 +46,7 @@ services:
       - SE_SUB_PATH=/selenium
 
   chrome_video:
-    image: selenium/video:ffmpeg-7.1.1-20250323
+    image: selenium/video:ffmpeg-7.1.1.1-20250323
     depends_on:
       - standalone_chrome
     environment:
@@ -70,7 +70,7 @@ services:
     stop_grace_period: 30s
 
   edge_video:
-    image: selenium/video:ffmpeg-7.1.1-20250323
+    image: selenium/video:ffmpeg-7.1.1.1-20250323
     depends_on:
       - standalone_edge
     environment:
@@ -94,7 +94,7 @@ services:
     stop_grace_period: 30s
 
   firefox_video:
-    image: selenium/video:ffmpeg-7.1.1-20250323
+    image: selenium/video:ffmpeg-7.1.1.1-20250323
     depends_on:
       - standalone_firefox
     environment:

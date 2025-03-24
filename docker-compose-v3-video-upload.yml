@@ -40,7 +40,7 @@ services:
       - SE_EVENT_BUS_HOST=selenium-hub
 
   chrome_video:
-    image: selenium/video:ffmpeg-7.1.1-20250323
+    image: selenium/video:ffmpeg-7.1.1.1-20250323
     depends_on:
       - chrome
     environment:
@@ -60,7 +60,7 @@ services:
       - RCLONE_CONFIG_MYFTP_FTP_CONCURRENCY=10
 
   edge_video:
-    image: selenium/video:ffmpeg-7.1.1-20250323
+    image: selenium/video:ffmpeg-7.1.1.1-20250323
     depends_on:
       - edge
     environment:
@@ -80,7 +80,7 @@ services:
       - RCLONE_CONFIG_MYFTP_FTP_CONCURRENCY=10
 
   firefox_video:
-    image: selenium/video:ffmpeg-7.1.1-20250323
+    image: selenium/video:ffmpeg-7.1.1.1-20250323
     depends_on:
       - firefox
     environment:

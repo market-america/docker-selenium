@@ -33,7 +33,7 @@ A Helm chart for creating a Selenium Grid Server in Kubernetes
 | global.seleniumGrid.imageRegistry | string | `"selenium"` | Image registry for all selenium components |
 | global.seleniumGrid.imageTag | string | `"4.30.0-20250323"` | Image tag for all selenium components |
 | global.seleniumGrid.nodesImageTag | string | `"4.30.0-20250323"` | Image tag for browser's nodes |
-| global.seleniumGrid.videoImageTag | string | `"ffmpeg-7.1.1-20250323"` | Image tag for browser's video recorder |
+| global.seleniumGrid.videoImageTag | string | `"ffmpeg-7.1.1.1-20250323"` | Image tag for browser's video recorder |
 | global.seleniumGrid.kubectlImage | string | `"bitnami/kubectl:latest"` | kubectl image is used to execute kubectl commands in utility jobs |
 | global.seleniumGrid.imagePullSecret | string | `""` | Pull secret for all components, can be overridden individually |
 | global.seleniumGrid.logLevel | string | `"INFO"` | Log level for all components. Possible values describe here: https://www.selenium.dev/documentation/grid/configuration/cli_options/#logging |
