@@ -1,6 +1,6 @@
 # selenium-grid
 
-![Version: 0.41.0](https://img.shields.io/badge/Version-0.41.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 4.30.0-20250323](https://img.shields.io/badge/AppVersion-4.30.0--20250323-informational?style=flat-square)
+![Version: 0.41.1](https://img.shields.io/badge/Version-0.41.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 4.30.0-20250323](https://img.shields.io/badge/AppVersion-4.30.0--20250323-informational?style=flat-square)
 
 A Helm chart for creating a Selenium Grid Server in Kubernetes
 
@@ -23,7 +23,7 @@ A Helm chart for creating a Selenium Grid Server in Kubernetes
 | https://jaegertracing.github.io/helm-charts | jaeger | 3.4.1 |
 | https://kedacore.github.io/charts | keda | 2.16.1 |
 | https://kubernetes.github.io/ingress-nginx | ingress-nginx | 4.12.1 |
-| https://prometheus-community.github.io/helm-charts | kube-prometheus-stack | 70.2.1 |
+| https://prometheus-community.github.io/helm-charts | kube-prometheus-stack | 70.3.0 |
 
 ## Values
 
