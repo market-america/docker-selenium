@@ -1,3 +1,29 @@
+## :heavy_check_mark: selenium-grid-0.42.0
+
+- Chart is using image tag 4.31.0-20250404
+- Chart is tested on Kubernetes versions: v1.26.15,v1.27.16,v1.28.15,v1.29.15,v1.30.11,v1.31.7,v1.32.3
+- Chart is tested on container runtime Docker versions: 26.1.4,27.4.1,27.5.1
+- Chart is tested on Helm versions: v3.11.3,v3.12.3,v3.13.3,v3.14.3,v3.15.4,v3.16.4,v3.17.0
+- Chart is tested autoscaling capabilities with KEDA image tag: 2.17.0
+
+### Fixed
+- [`e1631d56`](http://github.com/seleniumhq/docker-selenium/commit/e1631d5681e3298901c27beb3919874288a96e95) - Fix lint chart values :: Viet Nguyen Duc
+
+### Changed
+- [`1bf02dad`](http://github.com/seleniumhq/docker-selenium/commit/1bf02dadeef1e6c53e7bedde670eb7016388b1e2) - [ci] Update tag 4.31.0-20250404 in docs and files :: Selenium CI Bot
+- [`9efdd3e0`](http://github.com/seleniumhq/docker-selenium/commit/9efdd3e0e29f9e1257d28cebb605089c5efee340) - K8s: Add template for file browser video records service (#2763) :: Viet Nguyen Duc
+- [`9348ed1b`](http://github.com/seleniumhq/docker-selenium/commit/9348ed1bc845bd773473ad0ec8ff9229129f64b3) - K8s: Strictly handle `basicAuth.enabled` in template (#2760) :: Viet Nguyen Duc
+- [`c2ac0473`](http://github.com/seleniumhq/docker-selenium/commit/c2ac047331551e298482997fb21d3de2a5db8348) - Update Helm release postgresql to v16.6.2 (#2759) :: renovate[bot]
+- [`402592bd`](http://github.com/seleniumhq/docker-selenium/commit/402592bd62f823ffc093a38acd3cc22dd0c64d91) - Update Helm release keda to v2.17.0 (#2758) :: renovate[bot]
+- [`1fe8d6e4`](http://github.com/seleniumhq/docker-selenium/commit/1fe8d6e492c754e07d5ec3bef92bdf67343c2b5e) - Update Helm release kube-prometheus-stack to v70.4.2 (#2757) :: renovate[bot]
+- [`83093214`](http://github.com/seleniumhq/docker-selenium/commit/8309321489a873f91972ce748c3c378721efd257) - Update Helm release postgresql to v16.6.1 (#2756) :: renovate[bot]
+- [`d34cc0d4`](http://github.com/seleniumhq/docker-selenium/commit/d34cc0d4e72f2f69be1009d361a4a6ec70d95f55) - K8s: Update strategy as Recreate by default (#2755) :: Viet Nguyen Duc
+- [`26c45cdb`](http://github.com/seleniumhq/docker-selenium/commit/26c45cdb94ba40fb2ba0423098eb68d626743f82) - K8s: Config  is true by default :: Viet Nguyen Duc
+- [`1cca6ba8`](http://github.com/seleniumhq/docker-selenium/commit/1cca6ba8ef0d5ad1026a3c894a57164dfc275b38) - Update Helm release kube-prometheus-stack to v70.4.1 (#2747) :: renovate[bot]
+- [`77a23f7a`](http://github.com/seleniumhq/docker-selenium/commit/77a23f7a73f439013f419104520f5ccc3cdabd16) - Update Helm release kube-prometheus-stack to v70.4.0 (#2744) :: renovate[bot]
+- [`4c35f64b`](http://github.com/seleniumhq/docker-selenium/commit/4c35f64befa0b0627e3abb3fb87e708eb874afbe) - [ci] Update chart 0.41.1 changelog :: Selenium CI Bot
+- [`f310b3d4`](http://github.com/seleniumhq/docker-selenium/commit/f310b3d4faae94e6321f2c02b6715dde0ca3d6cf) - Update Helm release postgresql to v16.6.0 (#2741) :: renovate[bot]
+
 ## :heavy_check_mark: selenium-grid-0.41.1
 
 - Chart is using image tag 4.30.0-20250323
