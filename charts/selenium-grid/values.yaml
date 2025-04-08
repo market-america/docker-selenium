@@ -2093,7 +2093,7 @@ videoManager:
   # -- Number of replicas
   replicas: 1
   # -- SecurityContext for router container
-  securityContext: { }
+  securityContext: {}
   # -- Kubernetes service type (see https://kubernetes.io/docs/concepts/services-networking/service/#publishing-services-service-types)
   serviceType: ClusterIP
   # -- Set specific clusterIP when serviceType is ClusterIP (see https://kubernetes.io/docs/concepts/services-networking/service/#type-clusterip)
@@ -2103,23 +2103,23 @@ videoManager:
   # -- Set specific loadBalancerIP when serviceType is LoadBalancer (see https://kubernetes.io/docs/concepts/services-networking/service/#loadbalancer)
   loadBalancerIP: ""
   # -- Custom annotations for router service
-  serviceAnnotations: { }
+  serviceAnnotations: {}
   # -- Set externalTrafficPolicy to Local or Cluster (see https://kubernetes.io/docs/concepts/services-networking/service-traffic-policy/)
   serviceExternalTrafficPolicy: ""
   # -- Set session affinity to None, ClientIP or ClientIPString
   serviceSessionAffinity: ""
   # -- Tolerations for router pods
-  tolerations: [ ]
+  tolerations: []
   # -- Node selector for router pods
-  nodeSelector: { }
+  nodeSelector: {}
   # -- Priority class name for router pods
   priorityClassName: ""
-  extraVolumeMounts: [ ]
+  extraVolumeMounts: []
   # - name: srv
   #   mountPath: /srv
   #   subPath: srv
   # -- Extra volumes for video recorder pod
-  extraVolumes: [ ]
+  extraVolumes: []
   # - name: srv
   #   persistentVolumeClaim:
   #     claimName: video-pv-claim
