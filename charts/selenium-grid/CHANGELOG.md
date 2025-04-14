@@ -1,3 +1,20 @@
+## :heavy_check_mark: selenium-grid-0.42.1
+
+- Chart is using image tag 4.31.0-20250414
+- Chart is tested on Kubernetes versions: v1.26.15,v1.27.16,v1.28.15,v1.29.15,v1.30.11,v1.31.7,v1.32.3
+- Chart is tested on container runtime Docker versions: 26.1.4,27.4.1,27.5.1
+- Chart is tested on Helm versions: v3.11.3,v3.12.3,v3.13.3,v3.14.3,v3.15.4,v3.16.4,v3.17.0
+- Chart is tested autoscaling capabilities with KEDA image tag: 2.17.0
+
+### Changed
+- [`614242b8`](http://github.com/seleniumhq/docker-selenium/commit/614242b856031c44c06dbc8ca73ca33b4bdd44b1) - [ci] Update tag 4.31.0-20250414 in docs and files :: Selenium CI Bot
+- [`cb786352`](http://github.com/seleniumhq/docker-selenium/commit/cb7863526c7c86c25f34642baffe46c6069e60de) - Docker: Update basic auth headers in util scripts (#2779) :: Viet Nguyen Duc
+- [`35b2d0e1`](http://github.com/seleniumhq/docker-selenium/commit/35b2d0e14e714568c607165cfc73fd4d849cdf4f) - [ci] Update chart configuration table :: Selenium CI Bot
+- [`9bd4d8a7`](http://github.com/seleniumhq/docker-selenium/commit/9bd4d8a7deab9aab337986bffa180da5a44da5c0) - K8s: Add ability to config trigger name (#2777) :: Romain THERRAT
+- [`b6c1227d`](http://github.com/seleniumhq/docker-selenium/commit/b6c1227d696442215a97303227d7f12f9c3a449c) - Update Helm release redis to v20.11.5 (#2772) :: renovate[bot]
+- [`a07c626d`](http://github.com/seleniumhq/docker-selenium/commit/a07c626d50b1c96c0b5879b2a660c1c5942f4559) - Update Helm release postgresql to v16.6.3 (#2773) :: renovate[bot]
+- [`8f280e1b`](http://github.com/seleniumhq/docker-selenium/commit/8f280e1be538fa4d2411306c52db25be59ea786b) - [ci] Update chart 0.42.0 changelog :: Selenium CI Bot
+
 ## :heavy_check_mark: selenium-grid-0.42.0
 
 - Chart is using image tag 4.31.0-20250404
