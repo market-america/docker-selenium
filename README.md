@@ -4,6 +4,7 @@
 [![Nightly](https://github.com/SeleniumHQ/docker-selenium/actions/workflows/nightly.yml/badge.svg)](https://github.com/SeleniumHQ/docker-selenium/actions/workflows/nightly.yml)
 [![Update Dev/Beta Browser Images](https://github.com/SeleniumHQ/docker-selenium/actions/workflows/update-dev-beta-browser-images.yml/badge.svg)](https://github.com/SeleniumHQ/docker-selenium/actions/workflows/update-dev-beta-browser-images.yml)
 [![Releases downloads](https://img.shields.io/github/downloads/seleniumhq/docker-selenium/total.svg)](https://github.com/SeleniumHQ/docker-selenium/releases)
+[<img src="https://devin.ai/assets/deepwiki-badge.png" alt="Ask DeepWiki.com" height="20"/>](https://deepwiki.com/SeleniumHQ/docker-selenium)
 
 # Docker images for the Selenium Grid Server
 
