@@ -126,7 +126,7 @@ jobs:
             python-version: '3.10'
             test-upgrade: true
             service-mesh: true
-            os: ubuntu-22.04
+            os: blacksmith-8vcpu-ubuntu-2204
             check-records-output: false
             test-strategy: job_relay
     env:
