@@ -1,3 +1,18 @@
+## :heavy_check_mark: selenium-grid-0.43.1
+
+- Chart is using image tag 4.32.0-20250505
+- Chart is tested on Kubernetes versions: v1.26.15,v1.27.16,v1.28.15,v1.29.15,v1.30.11,v1.31.7,v1.32.3
+- Chart is tested on container runtime Docker versions: 26.1.4,27.4.1,27.5.1
+- Chart is tested on Helm versions: v3.11.3,v3.12.3,v3.13.3,v3.14.3,v3.15.4,v3.16.4,v3.17.0
+- Chart is tested autoscaling capabilities with KEDA image tag: 2.17.0
+
+### Changed
+- [`752bd109`](http://github.com/seleniumhq/docker-selenium/commit/752bd109e55e49fc1020d6d130970371cfc8a837) - Helm: Release chart 0.43.1 :: Viet Nguyen Duc
+- [`74149de8`](http://github.com/seleniumhq/docker-selenium/commit/74149de8ec0956cb61afbd1f1d067e0eee8a39f9) - K8s: Fix deployment config error in video-manager (#2831) :: Viet Nguyen Duc
+- [`7d4d65fa`](http://github.com/seleniumhq/docker-selenium/commit/7d4d65fa189264bb9607d078c27492b10cdc4951) - K8s: Fix deployment template error in video-manager (#2828) :: Viet Nguyen Duc
+- [`f7bc3fb7`](http://github.com/seleniumhq/docker-selenium/commit/f7bc3fb7facd980ff4ac54945c578bcc2ff14588) - Update Helm release redis to v21 (#2826) :: renovate[bot]
+- [`17aeb6d3`](http://github.com/seleniumhq/docker-selenium/commit/17aeb6d3b820674031d7204166cdca0d6b7272a5) - [ci] Update chart 0.43.0 changelog :: Selenium CI Bot
+
 ## :heavy_check_mark: selenium-grid-0.43.0
 
 - Chart is using image tag 4.32.0-20250505
