@@ -1,6 +1,6 @@
 # selenium-grid
 
-![Version: 0.43.0](https://img.shields.io/badge/Version-0.43.0-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 4.32.0-20250505](https://img.shields.io/badge/AppVersion-4.32.0--20250505-informational?style=flat-square)
+![Version: 0.43.1](https://img.shields.io/badge/Version-0.43.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 4.32.0-20250505](https://img.shields.io/badge/AppVersion-4.32.0--20250505-informational?style=flat-square)
 
 A Helm chart for creating a Selenium Grid Server in Kubernetes
 
@@ -18,12 +18,12 @@ A Helm chart for creating a Selenium Grid Server in Kubernetes
 
 | Repository | Name | Version |
 |------------|------|---------|
-| https://charts.bitnami.com/bitnami | postgresql | 16.6.6 |
-| https://charts.bitnami.com/bitnami | redis | 21.0.0 |
-| https://jaegertracing.github.io/helm-charts | jaeger | 3.4.1 |
-| https://kedacore.github.io/charts | keda | 2.17.0 |
-| https://kubernetes.github.io/ingress-nginx | ingress-nginx | 4.12.2 |
-| https://prometheus-community.github.io/helm-charts | kube-prometheus-stack | 71.1.0 |
+| https://charts.bitnami.com/bitnami | postgresql | ^16 |
+| https://charts.bitnami.com/bitnami | redis | ^21 |
+| https://jaegertracing.github.io/helm-charts | jaeger | ^3 |
+| https://kedacore.github.io/charts | keda | ^2.17 |
+| https://kubernetes.github.io/ingress-nginx | ingress-nginx | ^4 |
+| https://prometheus-community.github.io/helm-charts | kube-prometheus-stack | ^71 |
 
 ## Values
 
