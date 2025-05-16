@@ -1,3 +1,17 @@
+## :heavy_check_mark: selenium-grid-0.43.2
+
+- Chart is using image tag 4.32.0-20250515
+- Chart is tested on Kubernetes versions: v1.26.15,v1.27.16,v1.28.15,v1.29.15,v1.30.13,v1.31.9,v1.32.5,v1.33.1
+- Chart is tested on container runtime Docker versions: 26.1.4,27.4.1,27.5.1
+- Chart is tested on Helm versions: v3.11.3,v3.12.3,v3.13.3,v3.14.3,v3.15.4,v3.16.4,v3.17.3
+- Chart is tested autoscaling capabilities with KEDA image tag: 2.17.1
+
+### Changed
+- [`58279951`](http://github.com/seleniumhq/docker-selenium/commit/58279951254045eb307f30229f0c0545f85b8404) - [ci] Update tag 4.32.0-20250515 in docs and files :: Selenium CI Bot
+- [`88991ee3`](http://github.com/seleniumhq/docker-selenium/commit/88991ee3795a40e7e44eb30579dc2d63724786c2) - Update Helm release kube-prometheus-stack to v72 (#2816) :: renovate[bot]
+- [`e2abe9fb`](http://github.com/seleniumhq/docker-selenium/commit/e2abe9fb06b20c3a373d98338e26a093ad1447f9) - K8s: Node enable readiness probe checks status registered to Hub (#2833) :: Viet Nguyen Duc
+- [`7957b999`](http://github.com/seleniumhq/docker-selenium/commit/7957b9992517ee5d42c6ce5ccad76cde4d8105d5) - [ci] Update chart 0.43.1 changelog :: Selenium CI Bot
+
 ## :heavy_check_mark: selenium-grid-0.43.1
 
 - Chart is using image tag 4.32.0-20250505
