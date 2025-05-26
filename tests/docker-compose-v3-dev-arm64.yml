@@ -1,0 +1,44 @@
+# To execute this docker compose yml file use `docker compose -f docker-compose-v3-dev-arm64.yml up`
+# Add the `-d` flag at the end for detached execution
+# To stop the execution, hit Ctrl+C, and then `docker compose -f docker-compose-v3-dev-arm64.yml down`
+services:
+  chrome:
+    deploy:
+      mode: replicated
+      replicas: 3
+    image: selenium/node-chromium:4.32.0-20250515
+    platform: linux/arm64
+    shm_size: 2gb
+    volumes:
+      - ./selenium_server_deploy.jar:/opt/selenium/selenium-server.jar
+    depends_on:
+      - selenium-hub
+    environment:
+      - SE_EVENT_BUS_HOST=selenium-hub
+      - SE_VNC_NO_PASSWORD=true
+      - SE_NODE_ENABLE_MANAGED_DOWNLOADS=true
+
+  firefox:
+    deploy:
+      mode: replicated
+      replicas: 3
+    image: selenium/node-firefox:4.32.0-20250515
+    shm_size: 2gb
+    volumes:
+      - ./selenium_server_deploy.jar:/opt/selenium/selenium-server.jar
+    depends_on:
+      - selenium-hub
+    environment:
+      - SE_EVENT_BUS_HOST=selenium-hub
+      - SE_VNC_NO_PASSWORD=true
+      - SE_NODE_ENABLE_MANAGED_DOWNLOADS=true
+
+  selenium-hub:
+    image: selenium/hub:4.32.0-20250515
+    container_name: selenium-hub
+    volumes:
+      - ./selenium_server_deploy.jar:/opt/selenium/selenium-server.jar
+    ports:
+      - "4442:4442"
+      - "4443:4443"
+      - "4444:4444"

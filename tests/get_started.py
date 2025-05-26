@@ -18,20 +18,29 @@ if len(sys.argv) > 2:
 else:
     GRID_URL = "http://localhost:4444/wd/hub"
 
-options = None
-if browser == "chrome":
-    options = ChromeOptions()
-elif browser == "firefox":
-    options = FirefoxOptions()
-elif browser == "edge":
-    options = EdgeOptions()
+import concurrent.futures
 
-driver = webdriver.Remote(
-    command_executor=GRID_URL,
-    options=options,
-)
+def run_browser_instance(browser, grid_url):
+    options = None
+    if browser == "chrome":
+        options = ChromeOptions()
+    elif browser == "firefox":
+        options = FirefoxOptions()
+    elif browser == "edge":
+        options = EdgeOptions()
+    options.enable_bidi = True
+    options.enable_downloads = True
 
-driver.get('https://www.google.com/')
-print(driver.title)
-time.sleep(100)
-driver.quit()
+    while True:
+        driver = webdriver.Remote(
+            command_executor=grid_url,
+            options=options,
+        )
+        driver.get('https://www.google.com/')
+        print(driver.title)
+        time.sleep(100)
+        driver.quit()
+
+with concurrent.futures.ThreadPoolExecutor(max_workers=3) as executor:
+    for _ in range(3):
+        executor.submit(run_browser_instance, browser, GRID_URL)
