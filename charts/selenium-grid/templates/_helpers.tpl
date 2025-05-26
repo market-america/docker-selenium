@@ -877,8 +877,8 @@ Define terminationGracePeriodSeconds of the node pod.
 2. IF node.terminationGracePeriodSeconds is greater than autoscaling.terminationGracePeriodSeconds, use node.terminationGracePeriodSeconds
 */}}
 {{- define "seleniumGrid.node.terminationGracePeriodSeconds" -}}
-{{- $autoscalingPeriod := default 0 .Values.autoscaling.terminationGracePeriodSeconds -}}
-{{- $nodePeriod := default 0 .node.terminationGracePeriodSeconds -}}
+{{- $autoscalingPeriod := default 0 .Values.autoscaling.terminationGracePeriodSeconds | int -}}
+{{- $nodePeriod := default 0 .node.terminationGracePeriodSeconds | int -}}
 {{- $period := $nodePeriod -}}
 {{- if and (eq .Values.autoscaling.scalingType "deployment") (eq (include "seleniumGrid.useKEDA" $) "true") -}}
   {{- $period = ternary $nodePeriod $autoscalingPeriod (gt $nodePeriod $autoscalingPeriod) -}}

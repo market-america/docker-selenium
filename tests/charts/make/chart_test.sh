@@ -260,7 +260,7 @@ if [ "${SELENIUM_GRID_AUTOSCALING}" = "true" ] && [ "${CLEAR_POD_HISTORY}" = "tr
   "
 fi
 
-if [ "${CHART_ENABLE_INGRESS_HOSTNAME}" = "true" ]; then
+if [ "${CHART_ENABLE_INGRESS_HOSTNAME}" = "true" ] && [ "${RENDER_HELM_TEMPLATE_ONLY}" != "true" ]; then
   if [[ ! $(cat /etc/hosts) == *"${HOSTNAME_ADDRESS}"* ]]; then
     sudo -- sh -c -e "echo \"$(hostname -I | cut -d' ' -f1) ${HOSTNAME_ADDRESS}\" >> /etc/hosts"
   fi

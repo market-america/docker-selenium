@@ -121,7 +121,7 @@ jobs:
             test-strategy: playwright_connect_grid
           - k8s-version: 'v1.33.1'
             cluster: 'minikube'
-            helm-version: 'v3.17.3'
+            helm-version: 'v3.18.0'
             docker-version: '26.1.4'
             python-version: '3.10'
             test-upgrade: true
