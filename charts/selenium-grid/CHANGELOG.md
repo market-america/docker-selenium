@@ -1,3 +1,17 @@
+## :heavy_check_mark: selenium-grid-0.44.0
+
+- Chart is using image tag 4.33.0-20250525
+- Chart is tested on Kubernetes versions: v1.26.15,v1.27.16,v1.28.15,v1.29.15,v1.30.13,v1.31.9,v1.32.5,v1.33.1
+- Chart is tested on container runtime Docker versions: 26.1.4,27.4.1,27.5.1
+- Chart is tested on Helm versions: v3.11.3,v3.12.3,v3.13.3,v3.14.3,v3.15.4,v3.16.4,v3.17.3,v3.18.0
+- Chart is tested autoscaling capabilities with KEDA image tag: 2.17.1
+
+### Changed
+- [`798600fc`](http://github.com/seleniumhq/docker-selenium/commit/798600fce2b0d655e596f738b09a3d2ae50dbe88) - [ci] Update tag 4.33.0-20250525 in docs and files :: Selenium CI Bot
+- [`365c1065`](http://github.com/seleniumhq/docker-selenium/commit/365c10659905e6ad5e7e972fcb54225dc2a8c928) - K8s: Fix template issue on Helm version v3.18.0 :: Viet Nguyen Duc
+- [`cc36ea9b`](http://github.com/seleniumhq/docker-selenium/commit/cc36ea9b67278d8673f132970ae3f108e3e0b1c7) - K8s: Video recorder run as sidecar container is disabled by default (#2843) :: Viet Nguyen Duc
+- [`fb966b8f`](http://github.com/seleniumhq/docker-selenium/commit/fb966b8f00c1bcbaf3004c4c6436df6e3679bb00) - [ci] Update chart 0.43.2 changelog :: Selenium CI Bot
+
 ## :heavy_check_mark: selenium-grid-0.43.2
 
 - Chart is using image tag 4.32.0-20250515
