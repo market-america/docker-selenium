@@ -1,8 +1,8 @@
 FROM ubuntu:noble AS builder
 ARG FFMPEG_VERSION="7.1.1"
-ARG RCLONE_VER="v1.69.2"
+ARG RCLONE_VER="v1.69.3"
 ARG GO_VERSION="latest"
-ARG GO_CRYPTO_VERSION="v0.35.0"
+ARG GO_CRYPTO_VERSION="v0.36.0"
 ARG GO_OAUTH2_VERSION="v0.27.0"
 ARG GO_NET_VERSION="v0.38.0"
 ARG GOLANG_JWT_V4_VERSION="v4.5.2"
@@ -40,8 +40,8 @@ RUN cd /usr/local/src \
     && sed -i "s|golang.org/x/crypto v.*|golang.org/x/crypto ${GO_CRYPTO_VERSION}|g" go.mod \
     && sed -i "s|golang.org/x/oauth2 v.*|golang.org/x/oauth2 ${GO_OAUTH2_VERSION}|g" go.mod \
     && sed -i "s|golang.org/x/net v.*|golang.org/x/net ${GO_NET_VERSION}|g" go.mod \
-    && sed -i "s|github.com/golang-jwt/jwt/v5 v.*|github.com/golang-jwt/jwt/v5 v5.2.2|g" go.mod \
-    && sed -i "s|github.com/golang-jwt/jwt/v4 v.*|github.com/golang-jwt/jwt/v4 v4.5.2|g" go.mod \
+    && sed -i "s|github.com/golang-jwt/jwt/v5 v.*|github.com/golang-jwt/jwt/v5 ${GOLANG_JWT_V5_VERSION}|g" go.mod \
+    && sed -i "s|github.com/golang-jwt/jwt/v4 v.*|github.com/golang-jwt/jwt/v4 ${GOLANG_JWT_V4_VERSION}|g" go.mod \
     && go mod tidy \
     # Build rclone
     && make \
