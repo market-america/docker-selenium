@@ -1,13 +1,13 @@
 import sys
+import time
 
 from selenium import webdriver
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.options import Options as ChromeOptions
-from selenium.webdriver.firefox.options import Options as FirefoxOptions
+from selenium.webdriver.common.by import By
 from selenium.webdriver.edge.options import Options as EdgeOptions
-import time
+from selenium.webdriver.firefox.options import Options as FirefoxOptions
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import WebDriverWait
 
 if len(sys.argv) < 2:
     print("Usage: python3 get_started.py [chrome|firefox|edge]")
@@ -16,6 +16,7 @@ browser = sys.argv[1].lower()
 if browser not in ["chrome", "firefox", "edge"]:
     print("Unsupported browser. Use 'chrome', 'firefox', or 'edge'.")
     sys.exit(1)
+
 
 def run_browser_instance(browser):
 
@@ -44,6 +45,7 @@ def run_browser_instance(browser):
             )
 
             import random
+
             elements = driver.find_elements(By.XPATH, "//*[@data-testid='VideocamIcon']/..")
             if elements:
                 random.choice(elements).click()
@@ -53,6 +55,7 @@ def run_browser_instance(browser):
         finally:
             time.sleep(15)  # Keep the browser open for 10 seconds
             driver.quit()
+
 
 import concurrent.futures
 
